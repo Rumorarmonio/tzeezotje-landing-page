@@ -31,7 +31,7 @@
     min-height: 762px;
     padding-top: 29px;
     background-color: var(--light-grey);
-    background-image: url("/img/main-img.jpg");
+    background-image: url("../img/main-img.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     padding-bottom: 110px;
@@ -247,14 +247,14 @@
     position: absolute;
     right: 248px;
     top: 101px;
-    content: url("/img/schedule-first-img.jpg");
+    content: url("../img/schedule-first-img.jpg");
 }
 
 .schedule__central-rectangle::after {
     position: absolute;
     left: 248px;
     bottom: 60px;
-    content: url("/img/schedule-second-img.jpg");
+    content: url("../img/schedule-second-img.jpg");
 }
 
 

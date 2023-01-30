@@ -6,7 +6,7 @@
     --deep-blue: #3A4574;
     --light-grey: #E7E7E7;
     --beige: #D3B47F;
-    --grey: #B8B8B8;
+    --grey: #808080;
     --dark-grey: #2C2C2C;
     --red: #FF2D2D;
     --light-red: #FF3F40;
@@ -76,14 +76,14 @@
 }
 
 .menu__link:hover {
-    /*color: var(--light-red);*/
+    color: var(--light-red);
     font-weight: 500;
 }
 
-/*.menu__link_active {*/
-/*    color: var(--light-red);*/
-/*    font-weight: 500;*/
-/*}*/
+.menu__link_active {
+    color: var(--light-red);
+    font-weight: 500;
+}
 
 .header__telephone {
     display: flex;
@@ -261,6 +261,7 @@
 .reviews {
     min-width: 100%;
     background-color: var(--deep-blue);
+    margin-bottom: 109px;
 }
 
 .reviews__container {
@@ -324,4 +325,47 @@
     letter-spacing: 0.245em;
     text-align: center;
     color: var(--beige);
+}
+
+/* service section */
+.service {
+    max-width: 1171px;
+}
+
+.service__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.service__title {
+    position: relative;
+    margin: 0 0 38px;
+    font: 700 40px 'Poppins';
+    line-height: 88px;
+    text-transform: uppercase;
+}
+
+.service__title::after {
+    position: absolute;
+    top: 97px;
+    left: -55px;
+    width: 108px;
+    content: '';
+    border: 1px solid var(--beige);
+}
+
+.service__text {
+    width: 100%;
+    max-width: 470px;
+    color: var(--grey);
+    font: 400 16px 'Poppins';
+    line-height: 32px;
+}
+
+.service__image {
+    width: 670px;
+    height: 560px;
+    object-fit: cover;
 }

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
@@ -8,25 +9,25 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="img/png/favicon.png">
 </head>
 
 <body class="page">
 <div class="page__container page__container_image">
     <header class="header">
         <a class="header__logo" href="#">
-            <img class="header__logo-image" src="img/header-logo.png" alt="header-logo">
+            <img class="header__logo-image" src="img/png/header-logo.png" alt="header-logo">
         </a>
         <nav>
             <ul class="menu header__menu">
                 <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_active">À la carte</a>
+                    <a href="#service" class="menu__link menu__link_active">À la carte</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#portfolio" class="menu__link">Wijnkaart</a>
+                    <a href="#service" class="menu__link">Wijnkaart</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#about" class="menu__link">Lunchmenu</a>
+                    <a href="#service" class="menu__link">Lunchmenu</a>
                 </li>
                 <li class="menu__item">
                     <a href="#contacts" class="menu__link">Contact</a>
@@ -34,7 +35,7 @@
             </ul>
         </nav>
         <div class="header__telephone">
-            <img class="header__telephone-icon" src="img/call-calling.png" alt="telephone">
+            <img class="header__telephone-icon" src="img/png/call-calling.png" alt="telephone">
             <a class="header__telephone-number" href="tel:+3292825725">+32 9 282 57 25</a>
         </div>
     </header>
@@ -44,7 +45,7 @@
         <h2 class="intro__title">A bad day with lunch is better than a good day without it.</h2>
         <div class="intro__bottom">
             <a class="action-button" href="">Reserve a table</a>
-            <div class="intro__socials">
+            <div class="intro__socials socials-menu">
                 <a href="" class="social-link">Fb</a>
                 <a href="" class="social-link">Ig</a>
                 <a href="" class="social-link">Tw</a>
@@ -111,18 +112,18 @@
     </div>
 </section>
 
-<section class="page__container service">
+<section class="page__container service" id="service">
     <div class="service__item">
         <div class="service__description">
             <h3 class="service__title">lekker eten</h3>
             <p class="service__text">Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze zich op hun
                 gemak voelen. Dat is onze filosofie, goed eten in een goede sfeer.</p>
         </div>
-        <img class="service__image" src="img/meat.jpg" alt="meat">
+        <img class="service__image" src="img/jpg/meat.jpg" alt="meat">
     </div>
 
     <div class="service__item">
-        <img class="service__image" src="img/beer.jpg" alt="meat">
+        <img class="service__image" src="img/jpg/beer.jpg" alt="beer">
         <div class="service__description">
             <h3 class="service__title">toffe ambiance</h3>
             <p class="service__text">Het creëren van de juiste sfeer is zeer belangrijk voor ons. We nemen onze tijd om
@@ -136,9 +137,95 @@
             <p class="service__text">Ons doel is simpel: een gastvrije plek bieden waar u kunt genieten van een
                 onvergetelijke cocktail, een goed gesprek en lekker eten.</p>
         </div>
-        <img class="service__image" src="img/mojito.jpg" alt="meat">
+        <img class="service__image" src="img/jpg/mojito.jpg" alt="mojito">
     </div>
 </section>
+
+<section class="page__container photos">
+    <div class="photos__header">
+        <div class="photos__description">
+            <h3 class="photos__title">Sfeerfoto's</h3>
+            <p class="photos__text">De beste manier om de sfeer te ervaren is eens langskomen.
+                In tussentijd hebben we hier alvast wat foto’s voor je klaar.</p>
+        </div>
+        <div class="photos__arrows">
+            <i class="arrow"></i>
+            <i class="arrow arrow_right"></i>
+        </div>
+    </div>
+</section>
+
+<section class="page__container contacts" id="contacts">
+    <div class="contacts__container">
+        <div class="contacts__info">
+            <h3 class="contacts__title">Contacts</h3>
+            <div class="contacts__item item">
+                <img class="item__icon" src="img/svg/phone.svg" alt="phone">
+                <div class="item__info">
+                    <h4 class="item__title">Phone Number</h4>
+                    <a class="item-value" href="tel:+3292825725">+32 9 282 57 25</a>
+                </div>
+            </div>
+            <div class="contacts__item item">
+                <img class="item__icon" src="img/svg/letter.svg" alt="letter">
+                <div class="item__info">
+                    <h4 class="item__title">Email</h4>
+                    <a class="item-value" href="mailto:info@email.com">info@email.com</a>
+                </div>
+            </div>
+            <div class="contacts__item item">
+                <img class="item__icon" src="img/svg/clock.svg" alt="clock">
+                <div class="item__info">
+                    <h4 class="item__title">Opening Hours</h4>
+                    <p class="item-value">Everyday from 6 AM - 9 PM</p>
+                </div>
+            </div>
+            <div class="contacts__item item">
+                <img class="item__icon" src="img/svg/map.svg" alt="phone">
+                <div class="item__info">
+                    <h4 class="item__title">Map Street</h4>
+                    <a class="item-value"
+                       href="https://www.google.com/maps/place/Bistrot+'t+Zeezotje/@51.2303729,2.9186444,15.25z/data=!4m6!3m5!1s0x47dca929815cb8ad:0xddc6cefde1cad562!8m2!3d51.2321892!4d2.9217306!16s%2Fg%2F1tdg71tl">Jl.
+                        Raya Surabaya 2787</a>
+                </div>
+            </div>
+        </div>
+        <div class="contacts__right">
+            <h3 class="contacts__title">have any questions?</h3>
+            <form class="contacts__form form">
+                <label class="form__name">
+                    Name
+                    <input class="input name-input" type="text" placeholder="Input your name" name="Name">
+                </label>
+                <label class="form__email">
+                    Email
+                    <input class="input email-input" type="email" placeholder="Input your email" name="email">
+                </label>
+                <label class="form__request">
+                    Special Request
+                    <textarea class="input request-input" placeholder="Input your special request"
+                              name="message"></textarea>
+                </label>
+                <button class="action-button action-button_form" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <iframe class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113515.9986907858!2d3.675427828446351!3d51.047244958974815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c36d86000a0d65%3A0x7535eb12a3ad34f9!2zSG9vZ2xhdGVtd2VnIDIsIDk4MzAgU2ludC1NYXJ0ZW5zLUxhdGVtLCDQkdC10LvRjNCz0LjRjw!5e0!3m2!1sru!2sru!4v1675150227365!5m2!1snl!2snl"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<footer class="page__container footer">
+    <a class="footer__logo" href="#">
+        <img class="footer__logo-image" src="img/png/footer-logo.png" alt="footer-logo">
+    </a>
+    <div class="footer__socials socials-menu">
+        <a href="" class="social-link social-link_black">Fb</a>
+        <a href="" class="social-link social-link_black">Ig</a>
+        <a href="" class="social-link social-link_black">Tw</a>
+        <a href="" class="social-link social-link_black">Yt</a>
+    </div>
+</footer>
 
 </body>
 </html>

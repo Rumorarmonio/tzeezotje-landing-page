@@ -263,42 +263,61 @@
     min-width: 100%;
     background-color: var(--deep-blue);
     margin-bottom: 109px;
+    padding: 260px 0 166px;
+}
+
+.swiper-container {
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.reviews__item {
+    margin: auto;
+    max-width: 800px;
 }
 
 .reviews__container {
-    width: 100%;
+    position: relative;
     max-width: var(--main-width);
-    margin: 260px auto 196px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .arrow {
-    content: url("../img/png/arrow.png");
+    background-image: url("../img/png/arrow.png");
+    background-color: unset;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.arrow::after {
+    display: none;
 }
 
 .arrow_right {
     transform: rotate(180deg);
 }
 
-.reviews__center {
-    width: 100%;
-    max-width: 785px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .quote {
     font: 600 180px 'sans-serif';
     line-height: 40px;
     color: var(--beige);
-    margin-bottom: 12px;
+    margin: 0 0 12px;
+    text-align: center;
 }
 
 .review-title {
-    margin: 0 0 4px;
+    margin: 0 0 20px;
     font: 600 36px 'Poppins';
     line-height: 40px;
     color: var(--beige);
@@ -306,17 +325,19 @@
 }
 
 .review-text {
+    max-width: 785px;
     font: 400 16px 'Poppins';
     line-height: 40px;
     color: #FFFFFF;
     text-align: center;
-    margin-bottom: 6px;
+    margin: 0 auto 30px;
 }
 
 .review-author {
     font: 600 24px 'Poppins';
     line-height: 40px;
     letter-spacing: 0.245em;
+    text-transform: uppercase;
     text-align: center;
     color: var(--beige);
 }
@@ -470,6 +491,7 @@
 }
 
 .input {
+    height: 75px;
     font: 400 16px 'Poppins';
     line-height: 24px;
     padding: 0 15px;
@@ -479,7 +501,7 @@
     height: 75px;
 }
 
-.request-input {
+.input_big {
     height: 93px;
     padding-top: 33px;
     resize: none;

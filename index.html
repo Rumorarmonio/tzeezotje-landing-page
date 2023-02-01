@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" type="image/png" href="img/png/favicon.png">
     <script src="js/swiper-bundle.min.js" defer></script>
-    <script src="js/slider.js" defer></script>
+    <script src="js/sliders.js" defer></script>
 </head>
 
 <body class="page">
@@ -103,7 +103,7 @@
 <section class="page__container reviews">
     <div class="reviews__container">
         <p class="quote">“</p>
-        <div class="swiper-container">
+        <div class="swiper-container_reviews swiper-no-swiping">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="reviews__item">
@@ -184,8 +184,23 @@
                 In tussentijd hebben we hier alvast wat foto’s voor je klaar.</p>
         </div>
         <div class="photos__arrows">
-            <i class="arrow"></i>
-            <i class="arrow arrow_right"></i>
+            <button class="swiper-button-prev_photo arrow"></button>
+            <button class="swiper-button-next_photo arrow arrow_right"></button>
+        </div>
+    </div>
+    <div class="photos__slider">
+        <div class="swiper-container_photos">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide_photo">
+                    <img class="photos__item" src="img/jpg/slider/image-left.jpg" alt="left-image">
+                </div>
+                <div class="swiper-slide swiper-slide_photo">
+                    <img class="photos__item" src="img/jpg/slider/image-center.jpg" alt="center-image">
+                </div>
+                <div class="swiper-slide swiper-slide_photo">
+                    <img class="photos__item" src="img/jpg/slider/image-right.jpg" alt="right-image">
+                </div>
+            </div>
         </div>
     </div>
 </section>

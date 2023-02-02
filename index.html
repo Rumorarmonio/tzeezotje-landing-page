@@ -13,6 +13,7 @@
     <link rel="shortcut icon" type="image/png" href="img/png/favicon.png">
     <script src="js/swiper-bundle.min.js" defer></script>
     <script src="js/sliders.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body class="page">
@@ -36,6 +37,36 @@
                     <a href="#contacts" class="menu__link">Contact</a>
                 </li>
             </ul>
+            <div class="popup-menu">
+                <button class="popup-menu__button">
+                    <img class="popup-button-img" src="img/svg/menu-icon.svg" alt="menu-icon.svg">
+                </button>
+                <ul class="popup-menu__list hide-popup">
+                    <li class="popup-menu__item">
+                        <a class="popup-menu__logo" href="#">
+                            <img class="popup-menu__image" src="img/png/header-logo.png" alt="header-logo">
+                        </a>
+                    </li>
+                    <li class="popup-menu__item">
+                        <a class="popup-menu__link" href="#service">À la carte</a>
+                    </li>
+                    <li class="popup-menu__item">
+                        <a class="popup-menu__link" href="#service">Wijnkaart</a>
+                    </li>
+                    <li class="popup-menu__item">
+                        <a class="popup-menu__link" href="#service">Lunchmenu</a>
+                    </li>
+                    <li class="popup-menu__item">
+                        <a class="popup-menu__link" href="#contacts">Contact</a>
+                    </li>
+                    <li class="popup-menu__item">
+                        <div class="popup-menu__telephone">
+                            <img class="popup-menu__telephone-icon" src="img/png/call-calling.png" alt="telephone">
+                            <a class="popup-menu__telephone-number" href="tel:+3292825725">+32 9 282 57 25</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div class="header__telephone">
             <img class="header__telephone-icon" src="img/png/call-calling.png" alt="telephone">
@@ -97,7 +128,10 @@
         </li>
     </ul>
 
-    <div class="schedule__central-rectangle"></div>
+    <div class="schedule__central-rectangle">
+        <img class="schedule__first-image" src="img/jpg/schedule-first-img.jpg" alt="first-image">
+        <img class="schedule__second-image" src="img/jpg/schedule-second-img.jpg" alt="first-image">
+    </div>
 </section>
 
 <section class="page__container reviews">

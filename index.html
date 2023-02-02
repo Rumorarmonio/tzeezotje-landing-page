@@ -6,13 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bistrot 't Zeezotje</title>
+    <link rel="shortcut icon" type="image/png" href="img/png/favicon.png">
+    <!--    stylesheets-->
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/png/favicon.png">
+    <!--    scripts-->
     <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/jquery-3.6.3.min.js" defer></script>
     <script src="js/sliders.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/form.js" defer></script>
 </head>
 
 <body class="page">
@@ -79,7 +84,7 @@
         <p class="intro__suptitle">open everyday &nbsp6am - 9pm</p>
         <h2 class="intro__title">A bad day with lunch is better than a good day without it.</h2>
         <div class="intro__bottom">
-            <a class="action-button" href="">Reserve a table</a>
+            <a class="action-button reserve-button" href="#">Reserve a table</a>
             <div class="intro__socials socials-menu">
                 <a href="https://www.facebook.com/zeezotjeoostende" class="social-link">Fb</a>
                 <a href="https://www.instagram.com/bistrotzeezotje/" class="social-link">Ig</a>
@@ -312,6 +317,22 @@
            class="social-link social-link_black">Yt</a>
     </div>
 </footer>
+
+<dialog class="modal">
+    <div class="modal__content">
+        <div class="modal__header">
+            <h2>Reserve a table</h2>
+            <span class="modal__close-button">&times;</span>
+        </div>
+
+        <form class="modal__form" action="#" method="post">
+            <input type="text" placeholder="Your name">
+            <input type="tel" placeholder="Telephone number">
+            <input type="datetime-local" placeholder="Date and time">
+            <input type="submit" value="Reserve">
+        </form>
+    </div>
+</dialog>
 
 </body>
 </html>

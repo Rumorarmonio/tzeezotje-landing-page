@@ -176,7 +176,7 @@
     border-color: transparent transparent var(--transparent-black) transparent;
 }
 
-.popup-menu[open]>summary::before {
+.popup-menu[open] > summary::before {
     content: '';
     display: block;
     position: fixed;
@@ -211,12 +211,6 @@
         display: block;
     }
 
-    .menu {
-        border: 0;
-        clip: rect(0 0 0 0);
-        position: absolute;
-    }
-
     .page__container_image {
         padding-top: 0;
     }
@@ -226,14 +220,8 @@
         justify-content: center;
     }
 
-    .header__logo-image {
-        display: none;
-    }
-
-    .header__telephone {
-        display: none;
-    }
-
+    .header__logo-image,
+    .header__telephone,
     .header__menu {
         display: none;
     }

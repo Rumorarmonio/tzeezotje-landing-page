@@ -160,7 +160,6 @@
 
 .popup-menu__item:hover {
     background-color: var(--beige);
-    color: var(--beige);
 }
 
 .popup-menu__list::before {

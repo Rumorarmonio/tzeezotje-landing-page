@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <!--    scripts-->
-    <script src="js/swiper-bundle.min.js" defer></script>
-    <script src="js/jquery-3.6.3.min.js" defer></script>
-    <script src="js/sliders.js" defer></script>
-    <script src="js/modal.js" defer></script>
-    <script src="js/form.js" defer></script>
+    <!--    js libraries-->
+    <script src="js/libraries/swiper-bundle.min.js" defer></script>
+    <script src="js/libraries/inputmask.min.js" defer></script>
+    <script src="js/libraries/just-validate.production.min.js" defer></script>
+    <!--    js scripts-->
+    <script src="js/scripts/sliders.js" defer></script>
+    <script src="js/scripts/modal.js" defer></script>
+    <script src="js/scripts/form.js" defer></script>
 </head>
 
 <body class="page">
@@ -325,10 +327,19 @@
             <span class="modal__close-button">&times;</span>
         </div>
 
-        <form class="modal__form" action="#" method="post">
-            <input type="text" placeholder="Your name">
-            <input type="tel" placeholder="Telephone number">
-            <input type="datetime-local" placeholder="Date and time">
+        <form class="modal__form" action="sendmail.php" method="post">
+            <label class="form-label">
+                <input class="input-name" type="text" placeholder="Your name" name="name">
+            </label>
+            <label class="form-label">
+                <input class="input-email" type="email" placeholder="Your email" name="email">
+            </label>
+            <label class="form-label">
+                <input class="input-tel" type="tel" placeholder="Your telephone" name="telephone">
+            </label>
+            <label class="form-label">
+                <input class="input-date" type="datetime-local" placeholder="Date and time" name="date">
+            </label>
             <input type="submit" value="Reserve">
         </form>
     </div>

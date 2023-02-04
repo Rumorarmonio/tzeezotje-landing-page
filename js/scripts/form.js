@@ -74,7 +74,7 @@ validation
             }
         }
 
-        xhr.open('POST', 'sendmail.php', true);
+        xhr.open('POST', '../../php/sendmail.php', true);
         xhr.send(formData);
 
         event.target.reset();
